@@ -1016,7 +1016,7 @@ class Client(object):
         """
         return self._get('ticker/bookTicker', data=params, version=self.PRIVATE_API_VERSION)
 
-    # Account Endpoints
+    # Order Endpoints
 
     def create_order(self, **params):
         """Send in a new order
@@ -1506,7 +1506,8 @@ class Client(object):
         """
         return self._get('openOrders', True, data=params)
 
-    # User Stream Endpoints
+    # Account Endpoints
+    
     def get_account(self, **params):
         """Get current account information.
 
